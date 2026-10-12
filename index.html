@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="neighbourhood"></p>
+    <p id="arctic monkeys"></p>
+    <p id="glass animals"></p>
+    <script>
+        class food{
+            constructor(flavour , aroma , equipment){
+                this.flavour=flavour;
+                this.aroma=aroma;
+                this.equipment=equipment;
+            }
+        }
+        let chicken=new food("salty" , "fantastic" , "sufuria");
+        let chapati=new food("dry" , "nice" , "pan");
+        let juice=new food("sweet", "orange" , "blender");
+        document.getElementById("neighbourhood").innerHTML="chicken is " + chicken.flavour + " and " + chicken.aroma + " and is cooked using a " + chicken.equipment;
+        document.getElementById("arctic monkeys").innerHTML = "chapati is " + chapati.flavour + " and " + chapati.aroma + " and is cooked using a " + chapati.equipment;
+        document.getElementById("glass animals").innerHTML = "juice tastes " + juice.flavour + " and smells like " + juice.aroma + " and is made usng a " + juice.equipment;
+        
+    </script>
+</body>
+</html>
